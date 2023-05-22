@@ -1,0 +1,169 @@
+.container {
+    height:70%;
+    width: 80%;
+    perspective: 2000px;
+}
+
+.container:hover > .e-card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.e-card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front {
+    background-color: #3a3a3a;
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.back {
+    position: absolute;
+    background-color: #3a3a3a;
+    font-size: 2em;
+    color: white;
+    transform: rotateY(180deg);
+}
+.inclogo{
+    padding: 2%;
+    width: 60%;
+    height: 25%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2em;
+}
+.inclogo>img{
+    height: 90%;
+}
+.leftcard{
+    width: 70%;
+    height: 100%;
+}
+.rightcard{
+    width:30%;
+}
+.description{
+    font-size: 1.2em;
+    margin-top: 2%;
+    position: absolute;
+    width: 70%;
+    top:30%;
+    left:2%;
+    height:30%;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.skills{
+    font-size: 1.4em;
+    position: absolute;
+    width: 70%;
+    top:67%;
+    left:2%;
+    height:30%;
+    overflow: hidden;
+    text-overflow: clip;}
+.name{
+    position: absolute;
+    font-size: 1.5em;
+    width: 30%;
+    height: 50%;
+    right: 5%;
+    top:8%;
+    text-align: right;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.short{
+    margin-top:-1%;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+}
+.phone{
+    position: absolute;
+    top:10%;
+    left:5%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.email{
+    position: absolute;
+    top:30%;
+    left:5%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.web{
+    position: absolute;
+    top:50%;
+    left:5%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.location{
+    position: absolute;
+    top:70%;
+    left:5%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info{
+    font-size: 0.6em;
+    height:75%;
+    position:absolute;
+    top:25%;
+    width: 80%;
+    margin-top: 2%;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:10%;
+    right: 1%;
+    height:30%;
+}
+.company{
+    font-size: 1.4em;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.info>div>img{
+    height:80%;
+}
+.logos>a{
+    height: 70%;
+    padding: 2%;
+}
+.logos>a>img{
+    height: 100%;
+}
